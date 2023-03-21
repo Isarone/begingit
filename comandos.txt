@@ -1,0 +1,38 @@
+---------------------------------------Configuración de git
+>>git --version
+>>git config --global user.name "Samuel Arone"
+>>git config --global user.email "samu.arone@gmail.com"
+>>git config --global core.editor "code --wait"
+>>git config --global -e     //=> ver el archivo y esperar hasta cerrar el editor
+--------------------------------------------------------
+>>git config --global core.autocrlf [true|input] // => true:window | input:mac o linux
+
+----------------
+>>git config -h // => ver la configuración de git
+
+
+**************************************crear un proyecto*********************************************
+>>mkdir nuevacarpeta
+>>cd nuevacarpeta
+>>git init
+>>code .
+-------------------
+>>Agregar algun archivo  en la carpeta del proyecto
+-------------------
+Crear el proyecto en git y obtener la ruta : https://github.com/Isarone/begingit.git
+-------------------
+>>git remote add origin https://github.com/Isarone/begingit.git   //vincular los repositorios local con la nube
+
+-------------1ra Subida
+>>git status // => para ver los archivos pendiente x subir
+>>git add . // => subir todos los archivos
+
+>>git commit -m "Agregue la pagina hola.html" // => comitear para tener un historial
+>>git push --set-upstream origin main  // =>  subir a github, pedira credenciales
+
+-------------2da Subida
+>>git status
+>>git add .
+>>git commit -m "Se actualizo la pagina hola.html"
+>>git push  // => el push ya no necesita credenciales
+
